@@ -1,5 +1,13 @@
 canvas = document.getElementById("drawingCanvas");
 context = canvas.getContext("2d");
 
-var img = document.getElementById("photo");
-context.drawImage(img, 10, 10, 600, 400);
+// let img = document.getElementById("photo");
+// context.drawImage(img, 10, 10, 780, 450);
+
+let img = new Image();
+
+img.onload = function() {
+	context.drawImage(img, 10, 10);
+};
+
+img.src = localStorage.getItem("recent-image");
