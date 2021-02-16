@@ -4,10 +4,10 @@ body {
 
 
 canvas {
-    border: 1px solid black;
+    border: 2px solid black;
     margin: 0 auto;
     display: block;
-    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card img {
@@ -21,18 +21,17 @@ canvas {
 
 .container {
     background:#42b98348;
-    width: 800px;
-    height: 800px;
+    width: 780px;
     margin: 0 auto;
     border-radius: 6px;
-    padding: 2rem;
+    padding: 1rem;
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card {
     border-radius: 6px;
     padding: 0rem;
-    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .btn {
@@ -42,13 +41,13 @@ canvas {
     border: 2px solid #42b983;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0.5rem;
     font-weight: 700;
     outline: none;
     background: #fff;
     transition: all 0.22s;
     cursor: pointer;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .btn:active {

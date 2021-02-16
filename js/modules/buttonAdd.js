@@ -15,10 +15,10 @@ const element = (tag, classes = [], content) => {
 export function buttonAdd(selector) {
     const input = document.querySelector(selector)
 
-    //const openBtn = element('button', ['btn'], 'Обновить')
+    const openBtn = element('button', ['btn'], 'Обновить')
     const loadImg = element('button', ['btn'], 'Загрузить')
 
-    //input.insertAdjacentElement("afterend", openBtn)
+    input.insertAdjacentElement("afterend", openBtn)
     input.insertAdjacentElement("afterend", loadImg)
 
     const triggerInput = () => input.click()

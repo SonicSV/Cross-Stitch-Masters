@@ -7,7 +7,7 @@ context = canvas.getContext("2d");
 let img = new Image();
 
 img.onload = function() {
-	context.drawImage(img, 10, 10);
+	context.drawImage(img, 10, 10, 740, 640);
 };
 
 img.src = localStorage.getItem("recent-image");

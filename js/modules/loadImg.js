@@ -10,11 +10,10 @@ export function loadImg() {
     });
 
     document.addEventListener("DOMContentLoaded", () => {
-        const recentImageDataUrl = localStorage.getItem("recent-image");
-
-        if (recentImageDataUrl) {
-            //document.querySelector('#imgPreview').setAttribute("src", recentImageDataUrl);
-            //document.querySelector('#photo').setAttribute("src", recentImageDataUrl);
-        }
+        localStorage.getItem("recent-image");
+        // if (recentImageDataUrl) {
+        //     //document.querySelector('#imgPreview').setAttribute("src", recentImageDataUrl);
+        //     //document.querySelector('#photo').setAttribute("src", recentImageDataUrl);
+        // }
     });
 }
