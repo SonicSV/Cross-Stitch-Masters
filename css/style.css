@@ -1,0 +1,65 @@
+body {
+    background: rgb(255, 255, 255);
+}
+
+
+canvas {
+    border: 1px solid black;
+    margin: 0 auto;
+    display: block;
+}
+
+.card img {
+    padding: 0 auto;
+    position: absolute;
+    max-width: 800px;
+    min-width: 100px;
+    max-height: 765px;
+    min-height: 100px;
+}
+
+.container {
+    background:#42b98348;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    border-radius: 6px;
+    padding: 2rem;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    border-radius: 6px;
+    padding: 0rem;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    color: #42b983;
+    position: relative;
+    border-radius: 99px;
+    border: 2px solid #42b983;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    outline: none;
+    background: #fff;
+    transition: all 0.22s;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.btn:active {
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background: #000000;
+    cursor: pointer;
+    opacity: 0,8;
+}
+
+input[type=file] {
+    display: none;
+}
