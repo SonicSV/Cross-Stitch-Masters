@@ -11,3 +11,4 @@ img.onload = function() {
 };
 
 img.src = localStorage.getItem("recent-image");
+
