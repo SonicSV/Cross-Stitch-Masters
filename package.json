@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/SonicSV/Cross-Stitch-Masters.git"
   },
   "author": "Sobko Nikolay",
   "license": "ISC",
   "browserslist": [
     "> 1%"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/SonicSV/Cross-Stitch-Masters#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",

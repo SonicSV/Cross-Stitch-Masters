@@ -1,34 +1,53 @@
-export function loadImg() {
-    document.querySelector("#myFileInput").addEventListener("change", function () {
-        const reader = new FileReader();
+'use strict';
 
-        // reader.height = height;
-        // reader.width = width;
+//загрузка картинки в LocalStorage
 
-        // let ratio = reader.height / reader.width; //соотношение сторон img
-        // let height = 640;
-        // let width = height/ratio;
+// export function loadImg() {
+//     document.querySelector("#myFileInput").addEventListener("change", function () {
+//         const reader = new FileReader();
 
-        // if (width > 741) {
-        //     ratio = reader.width / reader.height; //соотношение сторон img
-        //     width = 740;
-        //     height = width/ratio;
-        // }
-
+//         reader.addEventListener("load", () => {
+//             localStorage.setItem("recent-image", reader.result);
+//         });
         
+//         reader.readAsDataURL(this.files[0]);
+//     });
 
-        reader.addEventListener("load", () => {
-            localStorage.setItem("recent-image", reader.result);
-        });
-        
-        reader.readAsDataURL(this.files[0]);
-    });
+// }
 
-    // document.addEventListener("DOMContentLoaded", () => {
-    //     localStorage.getItem("recent-image");
-    //     // if (recentImageDataUrl) {
-    //     //     //document.querySelector('#imgPreview').setAttribute("src", recentImageDataUrl);
-    //     //     //document.querySelector('#photo').setAttribute("src", recentImageDataUrl);
-    //     // }
-    // });
-}
+
+// export function loadImg() {
+//     document.querySelector("#myFileInput").addEventListener("onchange", function () {
+//     const preview = document.querySelector('img');
+//     const file    = document.querySelector('input[type=file]').files[0];
+//     const reader  = new FileReader();
+
+//     reader.onloadend = function () {
+//     preview.src = reader.result;
+//     }
+
+//     if (file) {
+//     reader.readAsDataURL(file);
+//     } else {
+//     preview.src = "";
+//     }
+// });
+// }
+
+
+// export function loadImg() {
+//     const preview = document.querySelector('img');
+//     const file    = document.querySelector('input[type=file]').files[0];
+//     const reader  = new FileReader();
+
+//     reader.onloadend = function () {
+//     preview.src = reader.result;
+//     }
+
+//     if (file) {
+//     reader.readAsDataURL(file);
+//     } else {
+//     preview.src = "";
+//     }
+//     console.log('Hello')
+// }
