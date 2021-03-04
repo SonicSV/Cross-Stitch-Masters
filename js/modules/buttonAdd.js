@@ -12,30 +12,24 @@ const element = (tag, classes = [], content) => {
     return node
 }
 
-export function buttonAdd(myInput, myImgSrc) {
+export function buttonAdd(myInput, myImgSrc, inputFile) {
     const input = document.querySelector(myInput)
     const img = document.querySelector(myImgSrc)
+    const pixel = document.querySelector(inputFile)
 
-    //const removeImgBtn = element('button', ['btn'], 'Поместить на Холст')
-    const loadImgBtn = element('button', ['btn'], 'Выберете Картинку')
+    const pixelImgBtn = element('button', ['btn'], 'выбор картинки')
+    //const loadImgBtn = element('button', ['btn'], 'Выберете Картинку')
 
     //input.insertAdjacentElement("afterend", removeImgBtn)
-    input.insertAdjacentElement("afterend", loadImgBtn)
+    pixel.insertAdjacentElement("afterend", pixelImgBtn)
+    //input.insertAdjacentElement("afterend", loadImgBtn)
 
-    // const triggerImgBtn = () => {
-    //     const imgloading = document.querySelector('#myImg')
-    //     const get = document.querySelector('#myImg').files[0];
-    //    // const readerImg = new FileReader();
 
-    //     //imgloading.src = readerImg.result;
-    //     //readerImg.readAsDataURL(get);
-
-    //     console.log(imgloading.src)
-    // }
-    const triggerInput = () => input.click()
+    //const triggerInput = () => input.click()
+    const triggerpixelImgBtn = () => pixel.click()
     
 
-    //removeImgBtn.addEventListener('click', triggerImgBtn)
-    loadImgBtn.addEventListener('click', triggerInput)
+    pixelImgBtn.addEventListener('click', triggerpixelImgBtn)
+    //loadImgBtn.addEventListener('click', triggerInput)
 
 }

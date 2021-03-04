@@ -8,14 +8,23 @@
     <link rel="stylesheet" href="https://sonicsv.github.io/Cross-Stitch-Masters/css/style.css">
 </head>
 <body>
-    
     <div class="container">
+        <ol class="colours"></ol>
+        
         <input type="file" id="myFileInput">
-        <img id="myImg" src="" alt="" height="220">
-        <canvas id="drawingCanvas" width="760" height="660">
-        </canvas>
-    </div>
+        <input id="input_file" type="file" accept="image/jpeg,image/png">
 
+        <button id="quantize_btn" class="btn">Квантование</button>
+        <button id="refresh" class="btn">Pix</button>
+        <button id="refresh_btn" class="btn">обновить</button>
+        
+
+        <img id="quantized_img" src="" height="320">
+        <img id="myImg" src="" alt="" height="220">
+
+        <canvas id="paintTest" width="0" height="0"></canvas>
+        <canvas id="drawingCanvas" width="760" height="660"></canvas>
+    </div>
     <script src="https://sonicsv.github.io/Cross-Stitch-Masters/js/bundle.js"></script>
 </body>
 </html>
